@@ -1,299 +1,442 @@
-<!DOCTYPE html>
 <html>
+<html>
+
 <head>
-	<title></title>
-	<script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"></script>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">
-	<link href='https://fonts.googleapis.com/css?family=Hammersmith One' rel='stylesheet'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<style>
-	body
-	{
-		background-color:lightgray;
-	}
-	h1 {
-  margin: 0 0 .5em;
-  padding: 0;
-}
-.rev
-{
-	padding-top: 50px;
-	background-image:url("landing-image.jpg");
-	background-repeat: none;
-	background-position: center;
-	height:40em;
-}
-.animate-reveal {
-  font: bold 18em sans-serif;
-  color:#5435b0;
-  border-radius: 3rem;
-  text-transform: uppercase;
-  padding-top: 100px;
+  <title></title>
+  <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">
+  <link href='https://fonts.googleapis.com/css?family=Hammersmith One' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="aafoundationindia_logoresize.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="rellax.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <style>
+    h1 {
+      margin: 0 0 .5em;
+      padding: 0;
+    }
+
+    .rev {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+    }
+
+    .animate-reveal {
+      font: bold 18vw sans-serif;
+      color: #5435b0;
+      border-radius: 3rem;
+      text-transform: uppercase;
+      opacity: 0;
+      text-align: center;
+      font-family: Hammersmith One;
+      -webkit-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+      -moz-animation: reveal 2s ease-in 1 normal forwards;
+      -o-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+      animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+    }
+
+    .animate-first,
+    .animate-second,
+    .animate-third,
+    .animate-fourth,
+    .animate-fifth,
+    .animate-sixth {
+      display: inline-block;
+      letter-spacing: 2px;
+    }
+
+    .animate-first {
+
+      -webkit-animation-delay: 0;
+      -moz-animation-delay: 0;
+      -o-animation-delay: 0;
+      animation-delay: 500ms;
+    }
+
+    .animate-second {
+      -webkit-animation-delay: 500ms;
+      -moz-animation-delay: 500ms;
+      -o-animation-delay: 500ms;
+      animation-delay: 600ms;
+    }
+
+    .animate-third {
+      -webkit-animation-delay: 1s;
+      -moz-animation-delay: 1s;
+      -o-animation-delay: 1s;
+      animation-delay: 700ms;
+    }
+
+    .animate-fourth {
+      -webkit-animation-delay: 1.5s;
+      -moz-animation-delay: 1.5s;
+      -o-animation-delay: 1.5s;
+      animation-delay: 800ms;
+    }
+
+    .animate-fifth {
+      -webkit-animation-delay: 2s;
+      -moz-animation-delay: 2s;
+      -o-animation-delay: 2s;
+      animation-delay: 900ms;
+    }
+
+    .animate-sixth {
+      -webkit-animation-delay: 2.5s;
+      -moz-animation-delay: 2.5s;
+      -o-animation-delay: 2.5s;
+      animation-delay: 1s;
+    }
+
+    @-webkit-keyframes reveal {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -o-transform: translateY(100%);
+        transform: translateY(100%);
+      }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+      }
+    }
+
+    @-moz-keyframes reveal {
+      0% {
+        opacity: 1;
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -o-transform: translateY(100%);
+        transform: translateY(100%);
+      }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+      }
+    }
+
+    @-o-keyframes reveal {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -o-transform: translateY(100%);
+        transform: translateY(100%);
+      }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes reveal {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -o-transform: translateY(100%);
+        transform: translateY(100%);
+      }
+
+      30% {
+        opacity: 0.3;
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -o-transform: translateY(100%);
+        transform: translateY(100%);
+      }
+
+      50% {
+        opacity: 0.5;
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -o-transform: translateY(100%);
+        transform: translateY(100%);
+      }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+      }
+    }
+
+    .form-box {
+      position: relative;
+      background-color: white;
+      width: 500px;
+      margin-top: 150px;
+      font-family: Hammersmith One;
+      box-sizing: border-box;
+      border-radius: 0.625rem;
+      z-index: 99;
+      
+    }
+
+    .form-box h2 {
+      margin: 0 0 1.875rem;
+      padding: 0;
+      color: #002f84;
+      ;
+      text-align: center;
+    }
+
+    .form-box .inputBox {
+      position: relative;
+    }
+
+    .form-box .inputBox input {
+      width: 100%;
+      padding: 0.625rem 0;
+      font-size: 20px;
+      color: #002f84;
+      ;
+      font-family: Hammersmith One;
+      letter-spacing: 0.062rem;
+      margin-bottom: 1.875rem;
+      border: none;
+      border-bottom: 0.065rem solid #ed1a92;
+      ;
+      outline: none;
+      background: transparent;
+    }
+
+    .form-box .inputBox label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0.625rem 0;
+      font-size: 16px;
+      color: #002f84;
+      pointer-events: none;
+      transition: 0.5s;
+    }
+
+    .form-box .inputBox input:focus~label,
+    .form-box .inputBox input:valid~label,
+    .form-box .inputBox input:not([value=""])~label {
+      top: -1.125rem;
+      left: 0;
+      color: #ed1a92;
+      ;
+      font-size: 0.75rem;
+    }
+
+    .form-box input[type="submit"] {
+      border: none;
+      outline: none;
+      color: #fff;
+      background-color: #03a9f4;
+      padding: 0.625rem 1.25rem;
+      cursor: pointer;
+      border-radius: 0.312rem;
+      font-size: 1rem;
+    }
+
+    .form-box input[type="submit"]:hover {
+      background-color: #1cb1f5;
+    }
+
+    .btn {
+      background-color: #ed1a92;
+      color: white;
+      font-size: 16px;
+      border-radius: 2rem;
+      border: none;
+      padding: 10px;
+      width: 250px;
+      height: 60px;
+      margin-left: 180px;
+      box-shadow: inset 0 0 0 0 #ffffff;
+      -webkit-transition: ease-out 1s;
+      -moz-transition: ease-out 1s;
+      transition: ease-out 1s;
+    }
+
+    .btn:hover {
+      box-shadow: inset 250px 0 0 0 #fff;
+      color: #ed1a92;
+      border: 1px solid #fff;
+      color: #002f84;
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navbar">
+    <div><img class="img-fluid logo" src="img/aafoundationindia_logo.png"></div>
+    <ul class="nav-links">
+      <li>
+        <div><a href="#" class="blocks">The Foundation</a></div>
+      </li>
+
+      <li>
+        <div class="donate-us"><a href="aa_form.html" class="blocks"><i id="heart" class="fa fa-heart"></i>Donations</a>
+        </div>
+      </li>
+      <li>
+        <div><a href="#" class="blocks">About Us</a></div>
+      </li>
+      <li>
+        <div><a href="#" class="blocks">Our Work</a></div>
+      </li>
+    </ul>
+    <ion-icon name="menu" onclick="openNav()" class="sidenav_icon"></ion-icon>
+  </nav>
+  <!--sidenav start-->
+  <div id="mySidenav" class="sidenav">
+    <div class="mainnav" style="">
+      <div class="row div-upper" style="width: 100%; align-content: end; padding-left: 100px;padding-right: 80px;">
+        <div class="col-6" style=""><img class=" logo " id="sidenav_img" src="img/aafoundationindia_logo.png"></div>
+        <div class="col-6" style="margin-right: -200px;">
+          <ion-icon name="close" onclick="closeNav()" class="sidenav_close"></ion-icon>
+        </div>
+      </div>
+      <div class="horizontal-line-box">
+        <ul id="list-sidenav" style="padding: 0px; line-height:;">
+          <li class="sidenav-li"><a href="#">The Foundation</a></li>
+          <li class="sidenav-li"><a href="#">About Us</a></li>
+          <li class="sidenav-li"><a href="#">Get Involved</a></li>
+          <li class="sidenav-li"><a href="#">Our Work</a></li>
+        </ul>
+      </div>
+      <div class="fbtn donate-sidenav-div">
+        <button type="button" style="
+                margin-top: 50px;
+                position: absolute; 
+                left: 50%; 
+                top: 50%;  
+                transform: translate(-50%,-50%); " class="btn btn-primary b2"><b>Donate</b></button></div>
+    </div>
+  </div>
+  </div>
+
+  <!--sidenav end-->
+  <div class="landing-image">
+    <img class="img-fluid" src="img/landing-image.jpg">
+    <div class="container rev">
+        <h1 class="animate-reveal animate-first">D</h1>
+        <h1 class="animate-reveal animate-second">O</h1>
+        <h1 class="animate-reveal animate-third">N</h1>
+        <h1 class="animate-reveal animate-fourth">A</h1>
+        <h1 class="animate-reveal animate-fifth">T</h1>
+        <h1 class="animate-reveal animate-sixth">E</h1>
+      </div>
+  </div>
+
 
   
- 
- opacity: 0;
-  text-align: center;
-  font-family: Hammersmith One;
-  -webkit-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
-     -moz-animation: reveal 2s ease-in 1 normal forwards;
-       -o-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
-          animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
-}
-.animate-first, .animate-second, .animate-third, .animate-fourth, .animate-fifth, .animate-sixth
-{
-	display:inline-block;
-	letter-spacing: 2px;
-}
-.animate-first {
-
-  -webkit-animation-delay: 0;
-     -moz-animation-delay: 0;
-       -o-animation-delay: 0;
-          animation-delay: 0;
-}
-
-.animate-second {
-  -webkit-animation-delay: 500ms;
-     -moz-animation-delay: 500ms;
-       -o-animation-delay: 500ms;
-          animation-delay: 500ms;
-}
-
-.animate-third {
-  -webkit-animation-delay: 1s;
-     -moz-animation-delay: 1s;
-       -o-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.animate-fourth {
-  -webkit-animation-delay: 1.5s;
-     -moz-animation-delay: 1.5s;
-       -o-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-.animate-fifth {
-  -webkit-animation-delay: 2s;
-     -moz-animation-delay: 2s;
-       -o-animation-delay: 2s;
-          animation-delay: 2s;
-}
-.animate-sixth {
-  -webkit-animation-delay: 2.5s;
-     -moz-animation-delay: 2.5s;
-       -o-animation-delay: 2.5s;
-          animation-delay: 2.5s;
-}
-@-webkit-keyframes reveal {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(100%);
-       -moz-transform: translateY(100%);
-         -o-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-       -moz-transform: translateY(0);
-         -o-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@-moz-keyframes reveal {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(100%);
-       -moz-transform: translateY(100%);
-         -o-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-  100% {   opacity: 1;
-    -webkit-transform: translateY(0);
-       -moz-transform: translateY(0);
-   -o-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@-o-keyframes reveal {
-  0% {   opacity: 0;
-   -webkit-transform: translateY(100%);
-       -moz-transform: translateY(100%);
-    -o-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-  100% {    opacity: 1;
-    -webkit-transform: translateY(0);
-       -moz-transform: translateY(0);
-         -o-transform: translateY(0);
- transform: translateY(0);
-  }
-}
-
-@keyframes reveal {
-  0% {    opacity: 0;
-    -webkit-transform: translateY(100%);
-       -moz-transform: translateY(100%);
-         -o-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-  30% {    opacity: 0.3;
-    -webkit-transform: translateY(100%);
-       -moz-transform: translateY(100%);
-         -o-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-   50% {    opacity: 0.5;
-    -webkit-transform: translateY(100%);
-       -moz-transform: translateY(100%);
-         -o-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-  100% {    opacity: 1;
-    -webkit-transform: translateY(0);
-     -moz-transform: translateY(0);
-         -o-transform: translateY(0);
-transform: translateY(0);
-  }
-}
-
-.box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: white;
-  height:550px;
-  transform: translate(-50%, -50%);
-  width:700px;
-  padding: 2.5rem;
-  font-family: Hammersmith One;
-  box-sizing: border-box;
-  border-radius: 0.625rem;
-  margin-top:100px;	
-  z-index:99;
-  margin-top:55em;
-}
-
-.box h2 {
-  margin: 0 0 1.875rem;
-  padding: 0;
-  color: #002f84;;
-  text-align: center;
-}
-
-.box .inputBox {
-  position: relative;
-}
-
-.box .inputBox input {
-  width: 100%;
-  padding: 0.625rem 0;
-  font-size: 20px;
-  color: #002f84;;
-  font-family: Hammersmith One;
-  letter-spacing: 0.062rem;
-  margin-bottom: 1.875rem;
-  border: none;
-  border-bottom: 0.065rem solid #ed1a92;;
-  outline: none;
-  background: transparent;
-}
-
-.box .inputBox label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0.625rem 0;
-  font-size: 16px;
-  color:#002f84;
-  pointer-events: none;
-  transition: 0.5s;
-}
-
-.box .inputBox input:focus ~ label,
-.box .inputBox input:valid ~ label,
-.box .inputBox input:not([value=""]) ~ label {
-  top: -1.125rem;
-  left: 0;
-  color: #ed1a92;;
-  font-size: 0.75rem;
-}
-
-.box input[type="submit"] {
-  border: none;
-  outline: none;
-  color: #fff;
-  background-color: #03a9f4;
-  padding: 0.625rem 1.25rem;
-  cursor: pointer;
-  border-radius: 0.312rem;
-  font-size: 1rem;
-}
-
-.box input[type="submit"]:hover {
-  background-color: #1cb1f5;
-}
-.btn
-{
-  background-color:#ed1a92;
-  color:white;
-  font-size:16px;
-  border-radius: 2rem;
-  border:none;
-  padding:10px;
-  width:250px;
-  height:60px;
-  margin-left: 180px;
-  box-shadow: inset 0 0 0 0 #ffffff;
-  -webkit-transition: ease-out 1s;
-  -moz-transition: ease-out 1s;
-  transition: ease-out 1s;
-}
-.btn:hover
-{
-  box-shadow: inset 250px 0 0 0 #fff;
-  color:#ed1a92;
-  border:1px solid #fff;
-  color:#002f84;
-}
-
-</style>
-</head>
-<body><br><br>
-<div class="container rev">
-  <h1 class="animate-reveal animate-first">F </h1>
-  <h1 class="animate-reveal animate-second" style="padding-top:10px;">U</h1>
-  <h1 class="animate-reveal animate-third">T</h1>
-  <h1 class="animate-reveal animate-fourth">U</h1>
-  <h1 class="animate-reveal animate-fifth">R</h1>
-  <h1 class="animate-reveal animate-sixth">E</h1>
+  <div class="form-box container">
+    <h2>CONTACT US</h2>
+    <form>
+      <div class="inputBox">
+        <input type="text" name="fname" required onkeyup="this.setAttribute('value', this.value);" value="">
+        <label>Firstname</label>
+      </div>
+      <div class="inputBox">
+        <input type="text" name="lname" required onkeyup="this.setAttribute('value', this.value);" value="">
+        <label>Lastname</label>
+      </div>
+      <div class="inputBox">
+        <input type="email" name="email" required onkeyup="this.setAttribute('value', this.value);" value="">
+        <label>E-Mail</label>
+      </div>
+      <div class="inputBox">
+        <input type="tel" name="tnum" required onkeyup="this.setAttribute('value', this.value);" value="">
+        <label>Phone Number</label>
+      </div>
+      <button type="submit" class="btn btn-primary mb-2"><b>Donate</b></button>
+    </form>
   </div>
-  <div class="box">
-  <h2>CONTACT US</h2>
-  <form>
-    <div class="inputBox">
-      <input type="text" name="fname" required onkeyup="this.setAttribute('value', this.value);" value="">
-      <label>Firstname</label>
-    </div>
-    <div class="inputBox">
-      <input type="text" name="lname" required onkeyup="this.setAttribute('value', this.value);" value="">
-      <label>Lastname</label>
-    </div>
-    <div class="inputBox">
-      <input type="email" name="email" required onkeyup="this.setAttribute('value', this.value);" value="">
-      <label>E-Mail</label>
-    </div>
-    <div class="inputBox">
-      <input type="tel" name="tnum" required onkeyup="this.setAttribute('value', this.value);" value="">
-      <label>Phone Number</label>
-    </div>
-    <button type="submit" class="btn btn-primary mb-2"><b>Donate</b></button>
-  </form>
-</div>
+  <script>
+      // When the user scrolls down 50px from the top of the document, resize the navbar's padding and the logo's font size
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          document.getElementById("navbar").style.height = "100px";
+          //document.getElementById("logo").style.fontSize = "25px";
+        } else {
+          document.getElementById("navbar").style.height = "120px";
+          //document.getElementById("logo").style.fontSize = "35px";
+        }
+      }
+    </script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+        document.getElementById("navbar").style.display = "none";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("navbar").style.display = "";
+      }
+
+    </script>
+    <script>
+      var rellax = new Rellax('.rellax', {
+        // center: true
+        callback: function (position) {
+          // callback every position change
+          console.log(position);
+        }
+      });
+    </script>
+    <script>
+      $(function () {
+        var regExp = /^([\w\.\+]{1,})([^\W])(@)([\w]{1,})(\.[\w]{1,})+$/;
+        $('[type="email"]').on('keyup', function () {
+          $('.message').hide();
+          regExp.test($(this).val()) ? $('.message.success').show() : $('.message.error').show();
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#send").click(function () {
+          var a = $(".mail").val();
+          if (a == "")
+            $(".blank").show();
+          else {
+            $(".frm").remove(".form-inline");
+            $(".success").hide();
+            $(".error").hide();
+            $(".sub").fadeIn(4000);
+          }
+        });
+      });
+    </script>
+  <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 </body>
+
 </html>

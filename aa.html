@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="aafoundationindia_logoresize.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="rellax.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+       <link href='https://fonts.googleapis.com/css?family=Hammersmith One' rel='stylesheet'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    body
+    {
+      background-color: #fff;
+    }
+    {
+      padding: 0px;
+      margin: 0px;
+     font-family: 'Oswald', sans-serif;
+    }
+    
+        
+    nav{
+
+      top: 0;
+            position: fixed;
+            width: 100%;
+            height: 120px;
+            z-index: 1;
+      margin-top: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 8vh;
+      background-color: white;
+      transition: 0.3s;
+
+        }
+        .nav-links{
+          display: flex;
+          justify-content: space-around;
+          align-items: right;
+          width: 40%;
+
+
+
+        }
+        .nav-links a{
+          color: #002f84;
+          text-decoration: none;
+          letter-spacing: 1px;
+          
+          font-size: 13px;
+        }
+        .nav-links li{
+           list-style: none;
+        }
+        .burger div{
+          width: 18px;
+          height: 3px;
+          margin: 4px;
+          background-color: #002f84;
+        }
+        .burger{
+          margin-top: -25px;
+          margin-left: -75px;
+        }
+        .logo{
+          width: 420px;
+            height: 85px;
+            position: relative;
+            
+        }
+        .donate-us{
+          background-color: #f2f2f2;
+          height: 50px;
+          width: 130px;
+          margin-top: -10px;
+          border-radius: 25px;
+          text-align: center;
+          padding: 10px;
+        }
+        @media screen and (max-width: 700px){
+          .nav-links{
+            display: none;
+          }
+        
+        }
+       
+        /*heart beat*/
+        #heart 
+{
+  position: relative;
+  width: 30px;
+  -webkit-animation: heart-beats 3s infinite;
+  animation: heart-beats 3s infinite;
+}
+#heart:before
+{
+  color: #002f84;
+  background-color: transparent;
+}
+/*#heart:before*/
+#heart:after {
+  color: #ed1a92;
+  background: transparent;
+  position: absolute;
+  width: 14px;
+  height: 20px;
+  top: 0;
+  left: 17px;
+  content: '';
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg) translateZ(0);
+  -webkit-transform: rotate(-45deg) translateZ(0);
+  transform-origin: 0 100%;
+  -webkit-transform-origin: 0 100%;
+  margin-left:2px; 
+  cursor:pointer;
+}
+
+#heart:after {
+  color: #ed1a92;
+  left: 0;
+  transform: rotate(45deg) translateZ(0);
+  -webkit-transform: rotate(45deg) translateZ(0);
+  transform-origin :100% 100%;
+  -webkit-transform-origin: 100% 100%;
+}
+#heart:hover
+{
+  color: #ed1a92;
+  cursor:pointer;
+}
+@keyframes heart-beats {
+  0%   { transform: scale(1);}
+  7%  { transform: scale(1.2); }
+  12%  { transform: scale(1.1); }
+  20%  { transform: scale(1.3); }
+  60%  { transform: scale(1); }
+  100% { transform: scale(0.99); }
+}
+
+@-webkit-keyframes heart-beats {
+  0%  { -webkit-transform: scale(1); }
+  7%  { -webkit-transform: scale(1.2); }
+  12% { -webkit-transform: scale(1.1); }
+  20% { -webkit-transform: scale(1.3); }
+  60% { -webkit-transform: scale(1); }
+  100% { -webkit-transform: scale(0.99); }
+}
+
+
+}
+.landing-image-div{
+  overflow-x: hidden;
+  margin-top: 100px;
+  
+}
+
+@media screen and (max-width: 700px)
+{
+  .landing-image-div{
+    transform: scaleY(4);
+  }
+}
+/* side nav all start*/
+.sidenav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #002f84;
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 20px;
+  
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 50px;
+  color: white;
+  display: block;
+  transition: .5s;
+  transition: font-size .3s;
+  font-weight: 400;
+}
+.sidenav a:hover{
+  color: #ff0080;
+  font-size: 60px;
+
+}
+.line-one{
+  border-top: 3px solid #003699;
+    width: 55%;
+    display: inline-block;
+    margin-bottom: 15px;
+
+}
+.line-three{
+  border-top: 3px solid #003699;
+    width: 7%;
+    display: inline-block;
+    margin-bottom: 15px;
+
+}
+@media screen and (max-width: 1100px)
+{
+  .line-one{
+    border-top: 3px solid #003699;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+  }
+  .line-three{
+     display: none;
+
+  }
+}
+
+/*.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  margin-left: 50px;
+  font-size: 24px;
+}
+.sidenav .closebtn:hover {
+
+  -webkit-transform: rotate(90deg); 
+  transform: rotate(90deg);
+}*/
+/**/
+.fa-close {
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  right: 2px;
+  padding: 20px;
+  -webkit-transition: -webkit-transform 0.25s; /* Safari */
+  transition:  transform 0.25s;
+  transition-timing-function: ease-in;
+
+}
+
+.fa-close:hover {
+  
+  -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg);
+}5
+/**/
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.horizontal-line-box{
+border-top: 2px solid #003699;
+/*border-bottom: 2px solid #003699;*/
+background-clip: padding-box;
+margin: auto;
+width:90%;
+}
+#list-sidenav{
+  list-style-type: none;
+  font-weight: 800;
+}
+#btn{
+  border-radius: 25px;
+  width: 220px;
+  height: 50px;
+  background-color: #ff0080;
+  border-color: #ff0080;
+  color: white;
+}
+
+.logo{
+  width: 320px;
+  height: 65px;
+  margin-left: 0px;
+  position: relative;
+  top: 0;
+  padding-top: 0px;
+  max-width: 100%;
+  height: auto;
+
+ }
+    .sidenav_logo{
+      position: relative;
+    }
+
+    
+.row{
+  left: 500px;
+  margin-bottom: 25px;
+}
+.col{
+  left: 500px;
+  margin-bottom: 100px;
+}
+/*sidenav all end*/
+
+
+.caption{
+  width: 100%;
+  max-width: 100%;
+
+}
+#landing-image{
+  
+    position: relative;
+    height: 500px;
+    width: 90%;
+    top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    margin: auto;
+  
+  
+}
+.centered-text-over-image{
+    position: relative;
+    color: #ED1A92;
+    font-size: 7vw;
+    font-weight: 900;
+    top: -350px; 
+    opacity: 1;
+    align-content: center;
+    justify-content: center;
+}
+.content_activities{
+  
+  background-color: #F6F6F6;
+  margin-top: -200px;
+  height: 2000px;
+}
+.contentimg{
+  width: 650px;
+  height: 475px;
+  max-width: 100%;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.7;
+  position: relative;
+  margin-left: 50px;
+
+  
+
+}
+.content_both{
+ 
+  
+}
+.content_1_text{
+    
+    height: 200px;
+    color: #002f84;
+    width: 250px;
+    line-height: 20px;
+    font-size: 12px;
+    margin: auto;
+    text-decoration : none solid rgb(0, 47, 132);
+    font-weight: 700;
+}
+.content_1_heading{
+   
+    margin: auto;
+    color: #002f84;
+    font-size: 40px;
+    font-weight: 900;
+    height: 175px;
+    width: 250px;
+    line-height: 1;
+  }
+.side_float_button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ED1A92;
+  cursor: pointer;
+  z-index: 1;
+  position: fixed;
+  right: 15px;
+}
+#heart_side{
+    position: fixed;
+    color: white;
+    overflow: hidden;
+    align-items: center;
+    margin: auto;
+    padding: 17px;
+
+}
+
+.row-content-activity{
+  padding: 50px;
+}
+
+#btn-on-landing-image{
+               background-color: white;
+               border: transparent;
+               border-color:  white;
+               color: #ED1A92;
+               padding: 10px 20px;
+               text-align: left;
+               border-radius: 50px;
+               width: 220px;
+               height: 55px;
+               margin-top: 100px;
+             }
+#main
+{
+  background-color:#ADD8E6;
+  height:450px;
+}
+@media only screen and (max-width: 600px) 
+{
+  #main{height:1000px;}
+}
+@media only screen and (max-width: 600px)
+{
+   #column-2{text-align: center;}
+   #col21:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 30%;
+  background: #002f84;
+  opacity:0.3;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 115px;
+  margin-left:33%;
+}
+
+ #col22:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  background: #002f84;
+  opacity:0.3;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  margin-left:39%;
+}
+
+ #col23:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 30%;
+  background: #002f84;
+  opacity:0.3;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  margin-left:36%;
+}
+
+ #col24:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 30%;
+  background: #002f84;
+  opacity:0.3;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  margin-left:35%;
+}
+
+ #col25:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 30%;
+  background: #002f84;
+  opacity:0.3;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  margin-left:45%;
+  width:115px;
+}
+
+}
+.fa-paper-plane-o
+{
+  font-weight: lighter;
+}
+#share
+{
+  border-radius:2rem;
+  margin: 20px;
+  padding:10px;
+  border:none;  
+  height: 45px;
+  width:250px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color:#ed1a92;
+  font-size:16px;
+  height:60px;
+  font-weight:bolder;
+}
+
+@keyframes shake 
+{
+  10%, 90% 
+  {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% 
+  {
+    transform: translate3d(1px, 0, 0);
+  }
+  30%, 50%, 70% 
+  {
+    transform: translate3d(1px, 0, 0);
+  }
+  40%, 60% 
+  {
+    transform: translate3d(1px, 0, 0);
+  }
+}
+.fa-share-alt
+{
+   font-size: 12px;
+   margin-right:15px;
+   font-weight: bolder;
+}
+#footerdonate
+{
+  background-color:#ed1a92;
+  color:white;
+  font-size:16px;
+  border-radius: 2rem;
+  font-family:'Oswald',sans-serif;
+  border:none;
+  padding:10px;
+  width:250px;
+  height:60px;
+  box-shadow: inset 0 0 0 0 #ffffff;
+  -webkit-transition: ease-out 1s;
+  -moz-transition: ease-out 1s;
+  transition: ease-out 0.3s;
+}
+#footerdonate:hover
+{
+  box-shadow: inset 250px 0 0 0 #ffffff;
+  color:#ed1a92;
+}
+#send
+{ 
+  font-size:25px;
+  background-color:#ed1a92;
+  width: 60px;
+  height:60px;
+  border: none;
+  padding:9px;
+  border-radius: 2rem;
+  color:white;
+}
+#send:hover
+{
+  background-color:#ffffff;
+  color:#002f84;
+ }
+#footer1
+{
+  font-size:28px;
+  
+  font-weight :900;
+  margin-top:55px; 
+  color:#002f84; 
+  text-align:center;
+}
+#footer2
+{
+  font-size:22px;
+  text-align: right;
+  opacity:0.7;
+  color:#002f84;
+}
+#txt1
+{
+ 
+  color:#ed1a92;
+  font-size:16px;
+  font-weight: bolder;
+  margin-top:2px;
+  position:relative ;
+  text-decoration:none;
+
+}
+.img
+{
+  width:140px;
+  height:88px;
+}
+ #txt1:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  position: absolute;
+  background: #ed1a92;
+  opacity:0.3;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#txt1:hover:after { 
+  width: 135px; 
+  left: 0; 
+}
+#txt1:hover
+{
+  text-decoration: none;
+}
+#txt2
+{
+  
+  color:#ed1a92;
+  font-size:16px;
+  font-weight: bolder;
+  margin-top:2px;
+  position:relative;
+  text-decoration:none;
+}
+#txt2:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  position: absolute;
+  background: #ed1a92;
+  opacity:0.3;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#txt2:hover:after { 
+  width: 110px; 
+  left: 0; 
+}
+#col21
+{
+  color:#002f84;
+  text-decoration:none;
+  font-size:16px;
+  font-family:'Oswald',sans-serif;
+}
+#col21:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  background: #002f84;
+  opacity:0.3;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#col21:hover:after { 
+  width: 105px; 
+  left: 0; 
+}
+#col22
+{
+  color:#002f84;
+  text-decoration:none;
+  font-size:16px;
+  font-family:'Oswald',sans-serif;
+}
+#col22:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  background: #002f84;
+  opacity:0.3;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#col22:hover:after { 
+  width: 68px; 
+  left: 0; 
+}
+#col23
+{
+  color:#002f84;
+  text-decoration:none;
+  font-size:16px;
+  font-family:'Oswald',sans-serif;
+}
+#col23:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  background: #002f84;
+  opacity:0.3;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#col23:hover:after { 
+  width: 85px; 
+  left: 0; 
+}
+#col24
+{
+  color:#002f84;
+  text-decoration:none;
+  font-size:16px;
+  font-family:'Oswald',sans-serif;
+}
+#col24:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  background: #002f84;
+  opacity:0.3;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#col24:hover:after { 
+  width: 95px; 
+  left: 0; 
+}
+#col25
+{
+  color:#002f84;
+  text-decoration:none;
+  font-size:16px;
+  
+}
+#col25:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  background: #002f84;
+  opacity:0.3;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#col25:hover:after { 
+  width: 23px; 
+  left: 0; 
+}
+.mail
+{
+  border-radius: 2rem;
+  margin-right:-10px;
+  width:250px;
+  height:60px;
+  
+  border:none;
+  text-align: left;
+  padding:15px;
+  color:gray;
+}
+input {
+    font-size: 15px;
+    text-align: center;
+    border: 5px solid rgba(0, 0, 0, .3);
+}
+
+.message {
+    
+    display: none;
+    width: 100%;
+    padding-left:70px;
+    padding-top:0px;
+    margin-top:7px;
+}
+
+.error 
+{
+    color: red;
+}
+
+.success 
+{
+    color: green;
+}
+.blank
+{
+  color:red;
+}
+.sub
+{
+  background-color:#ADD8E6;
+  display:none;
+  color:#ed1a92;
+  font-size:45px;
+ 
+ /* padding-top:200px;*/
+}
+#share:hover {
+  -webkit-filter: blur(0.75px);
+  -moz-filter: all .5s ease;
+  -o-filter: all .5s ease;
+  -ms-filter: all .5s ease;
+  filter: blur(0.75px);
+}
+    </style>
+</head>
+<body>
+  <nav id="navbar">
+    <div ><img class="img-fluid logo" src="aafoundationindia_logo.png"></div>
+    <ul class="nav-links">
+      <li>
+        <div class="border-nav"><a href="#">The Foundation</a></div>
+      </li>
+      
+        <div class="border-nav"><div class="donate-us"><a href="#"><i id="heart" class="fa fa-heart"></i>Donations</a></div></div>
+        
+      
+      <li>
+        <div class="border-nav"><a href="#">About Us</a></div>
+      </li>
+      <li>
+        <div class="border-nav"><a href="#">Our Work</a></div>
+      </li>
+      <!--li class="closing-button-burger">
+        
+      </li-->
+    </ul>
+    <div  class="burger"  style="cursor:pointer" onclick="openNav()">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+            </div>
+  </nav>
+  
+
+      <!--div class="landing-image-div"><img style="min-width: 100%; overflow-x: hidden;" class="img-fluid landing-image" src="mumbaikids_resize.jpg"></div-->
+    
+    <div class="landing">
+      <div class="home-wrap">
+        <div class="home-inner" style="display: absolute; text-align: center;">
+          <img  id="landing-image" src="landing-image.jpg">
+          <div class="centered-text-over-image" >Education For All.</div>
+          
+          </div>
+        </div>
+      </div>
+    
+
+
+
+        <div class="side_float_button"><i id="heart_side" class="fa fa-heart"></i></div>
+
+
+
+
+
+    <!--Activities content start-->
+    
+
+    <div class="content_activities container" style="">
+
+         <div class="content-box content_1 rellax" data-rellax-speed="2" style=" margin-top: 200px;">
+            <div class="row row-content-activity" >
+             <div class="col-md-8" >
+               <div class="" style="display:;"><img class="contentimg img-fluid"  src="contentimg1.jpg"></div>
+               </div>
+               <div class="col-md-4" >
+               <div class="content_both">
+                 <div class="content_1_heading">Big Activities for a Big Cause</div>
+                 <div class="content_1_text">The foundation sponsored the monthly fees of Seven financially needy children to promote the education.The foundation sponsored the books and notebooks to various poor and unprivileged children including the seven children already being sponsored.
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+
+       <div class="content-box content_2 rellax" data-rellax-speed="2.5">
+       
+           <div class="row row-content-activity">
+             
+             <div class="col-md-4" >
+               <div class="content_both">
+                 <div class="content_1_heading">Big Activities for a Big Cause</div>
+                 <div class="content_1_text">The foundation sponsored the monthly fees of Seven financially needy children to promote the education.The foundation sponsored the books and notebooks to various poor and unprivileged children including the seven children already being sponsored.
+                 </div>
+               </div>
+             </div>
+             <div class="col-md-8" >
+               <div><img class="contentimg img-fluid"   src="contentimg2.jpg"></div>
+             </div>
+        
+         </div>
+       </div>
+
+        <div class="content-box content_3 rellax" data-rellax-speed="3">
+       
+           <div class="row row-content-activity">
+             <div class="col-md-8" >
+               <div><img class="contentimg img-fluid"   src="contentimg3.jpg"></div>
+             </div>
+             <div class="col-md-4" >
+               <div class="content_both">
+                 <div class="content_1_heading">Big Activities for a Big Cause</div>
+                 <div class="content_1_text">The foundation sponsored the monthly fees of Seven financially needy children to promote the education.The foundation sponsored the books and notebooks to various poor and unprivileged children including the seven children already being sponsored.
+                 </div>
+               </div>
+             </div>
+        
+         </div>
+       </div>
+
+        <div class="content-box content_4 rellax" data-rellax-speed="3.5">
+       
+           <div class="row row-content-activity">
+             
+             <div class="col-md-4" >
+               <div class="content_both">
+                 <div class="content_1_heading">Big Activities for a Big Cause</div>
+                 <div class="content_1_text">The foundation sponsored the monthly fees of Seven financially needy children to promote the education.The foundation sponsored the books and notebooks to various poor and unprivileged children including the seven children already being sponsored.
+                 </div>
+               </div>
+             </div>
+             <div class="col-md-8" >
+               <div><img class="contentimg img-fluid"  src="contentimg4.jpg"></div>
+             </div>
+        
+         </div>
+       </div>
+
+</div>
+<!--sidenav start-->
+  <div id="mySidenav" class="sidenav">
+       <div class="mainnav" style="">
+          <div class="row div-upper" style="width: 100%; align-content: end; padding-left: 100px;padding-right: 80px;">
+            <div class="col-6" style="" ><img class="img-fluid logo" src="aafoundationindia_logo.png"></div>
+            <div class="col-6" style="margin-right: -200px;" ><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i  class="fa fa-close"></i></a></div>
+          </div>
+          <div class="horizontal-line-box">
+          <ul id="list-sidenav" style="padding: 0px; line-height: 1.2;">
+               <li><a href="#">The Foundation</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Get Involved</a></li>
+               <li><a href="#">Our Work</a></li>
+            </ul>
+          </div>
+          <div class="wrap-line-button" style="transform: translateX(60px); margin-top: 0px;" >
+              <div  class="line-one"></div>
+              <div style="display: inline-block;margin-right: 30px;margin-left: 30px;"><button id="footerdonate" class="btn btn-warning">Donate</button></div>
+              <div class="line-three"></div>
+          </div>
+        </div>
+    </div>
+      <div class="container-fluid" id="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <p id="footer1">Sign Up for Newsletter</p>
+              <br>
+                <div class="row justify-content-center align-items-center col1">
+                 
+                <div class="form-inline frm">
+                  <input type="email" class="mail" placeholder="E-Mail" required />
+                    <button id="send" type="submit">
+                      <i class="fa fa-paper-plane-o" ></i>
+                    </button>
+                  </div>
+                   <div class="sub">
+                    THANK YOU!
+                  </div> 
+                </div>
+                 <span class="message success">E-MAIL VALID.</span>
+                  <span class="message error">E-MAIL INVALID</span>
+                  <span class="message blank">E-MAIL REQUIRED</span>
+              </div>
+            <div class="col-sm-4">
+              <p id="footer1">
+                <b>Follow Us</b><br></p>
+                <div style="text-align: center">
+                  <button style="font-size:20px" class="btn btn-primary" id="share">
+                    <i class="fa fa-share-alt"></i>
+                  Share
+                  </button>
+               </div>
+             </div>
+            <div class="col-sm-4">
+              <p id="footer1">
+                <b>Support Us</b><br><br>
+               <button type="button" class="btn btn-primary mb-2" id="footerdonate"><b>Donate</b></button></p>
+               <div style="text-align: center">
+                  <a href="#" id="txt1">Online Fundraising</a><br>
+                  <a href="#" id="txt2">Benefit Events</a>
+                </div>
+            </div>
+          </div>
+          <br>
+      <hr style="border:2px solid #b1c9e2;">
+      <div id="column-2" class="container-fluid">
+        <div class="row">
+          <!--div class="col-sm-2" style="overflow: visible;">
+            <img src="aafoundationindia_logo.png" width="200px;" class="img">
+          </div-->
+          <div class="col-sm-2">
+            <a href="#" id="col21" >The Foundation</a>
+          </div>
+           <div class="col-sm-2">
+            <a href="#" id="col22">About Us</a>
+          </div>
+           <div class="col-sm-2">
+            <a href="#" id="col23">Our Mission</a>
+          </div>
+           <div class="col-sm-2">
+            <a href="#" id="col24">Get Involved</a>
+          </div>
+           <div class="col-sm-2">
+            <a href="#" id="col25">ABC</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  <!--sidenav end-->
+
+  <!--script for side nav-->
+<script>
+// When the user scrolls down 50px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").style.height= "100px";
+    //document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.height = "120px";
+    //document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+</script>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById("navbar").style.display = "none";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("navbar").style.display = "flex";
+}
+
+</script>
+ <script>
+            var rellax = new Rellax('.rellax', {
+            // center: true
+            callback: function(position) {
+                // callback every position change
+                console.log(position);
+            }
+          });
+        </script>
+        <script>
+    $(function(){
+      var regExp = /^([\w\.\+]{1,})([^\W])(@)([\w]{1,})(\.[\w]{1,})+$/;
+        $('[type="email"]').on('keyup', function() {
+      $('.message').hide();
+    regExp.test( $(this).val() ) ? $('.message.success').show() : $('.message.error').show();
+  });
+});
+  </script>
+  <script>
+  $(document).ready(function(){
+    $("#send").click(function(){
+      var a=$(".mail").val();
+      if(a=="")
+       $(".blank").show();
+      else
+      {
+      $(".frm").remove(".form-inline");
+      $(".success").hide();
+      $(".error").hide();
+      $(".sub").fadeIn(4000);
+    }
+    });
+  });
+</script>
+</body>
+</html>
