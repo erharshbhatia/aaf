@@ -1,2 +1,3 @@
 # junkiesloth.github.io
-Demo Site for NGO
+Handled the Backend of this site:
+--> Automatic Mail Subscription System
